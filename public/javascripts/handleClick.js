@@ -2,10 +2,7 @@ const addData = () => {
   fetch("http://localhost:8123", { method: "POST" })
     .then(res => res.json())
     .then(res => {
-      document.getElementsByClassName("model")[0].innerHTML += `<br/> ${res.model}`;
-      document.getElementsByClassName("serial")[0].innerHTML += `<br/> ${res.serial}`;
-      document.getElementsByClassName("support")[0].innerHTML += `<br/> ${res.address}`;
-      document.getElementsByClassName("sectors")[0].innerHTML += `<br/> ${res.sectors} (${res.diskSize} GB disk size)`;
+      document.getElementsByClassName("table")[0].innerHTML += `<span>${res.model}</span><span>${res.serial}</span><span>${res.address}</span><span>${res.sectors} (${res.diskSize} GB disk size)</span>`
     }
     );
 };
