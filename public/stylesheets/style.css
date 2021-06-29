@@ -7,23 +7,24 @@ body {
   text-align: center;
   padding: 15px 0px;
   border-radius: 5px;
-  border: solid 2px gray;
-  background-color:lightgray;
+  border: solid 2px #1E3A8A;
+  background-color:#1D4ED8;
+  color:white;
   margin:20px auto
 }
 
 .click-button:hover{
-  background-color: gray;
-  color:white;
+  background-color: #1E3A8A;
   cursor: pointer;
-  box-shadow: 5px 5px rgba(192, 192, 192, 0.507);
+  box-shadow: 5px 5px rgba(192, 192, 192, 0.267);
 }
 
 .table {
   margin: 30px 0px;
-  display: flex
+  display: flex;
+  justify-content: space-between;
 }
 
-.column{
-  margin: 0px 2%;
+.column {
+  margin:5px;
 }
